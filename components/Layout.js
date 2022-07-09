@@ -5,7 +5,7 @@ import Navbar from './Navbar'
 
 export default function Layout({ children }) {
   return (
-    <div className="bg-gradient-to-b from-sky-600 to-indigo-700 min-h-screen m-0 p-0">
+    <div className="bg-gradient-to-b from-sky-600 to-indigo-700 min-h-screen">
       <Head>
         <title>Volunstreet</title>
         <meta name="description" content="Volunstreet App" />
@@ -20,7 +20,7 @@ export default function Layout({ children }) {
         />
       </Head>
       <Navbar fixed={true} />
-      <main>{children}</main>
+      <main className="">{children}</main>
       {/* <Footer /> */}
     </div>
   )

@@ -4,6 +4,9 @@ export const JobsList = () => {
   return (
     <div>
       <JobCard />
+      <JobCard />
+      <JobCard />
+      <JobCard />
     </div>
   )
 }
