@@ -1,7 +1,7 @@
-// import Navbar from './navbar'
 // import Footer from './footer'
 
 import Head from 'next/head'
+import Navbar from './Navbar'
 
 export default function Layout({ children }) {
   return (
@@ -14,8 +14,12 @@ export default function Layout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
           rel="stylesheet"
         ></link>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        />
       </Head>
-      {/* <Navbar /> */}
+      <Navbar fixed={true} />
       <main>{children}</main>
       {/* <Footer /> */}
     </div>
